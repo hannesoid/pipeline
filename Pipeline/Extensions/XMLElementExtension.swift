@@ -3203,8 +3203,6 @@ extension XMLElement {
 				return "The \"\(element.name ?? "unnamed")\" element cannot be annotated."
 			case .notAnAnnotation(let element):
 				return "The \"\(element.name ?? "unnamed")\" element is not an annotation."
-			default:
-				return "An error has occurred with an FCPXML element."
 			}
 		}
 	}
