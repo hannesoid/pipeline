@@ -20,7 +20,7 @@ extension XMLElement {
 	///
 	/// - Parameter name: The name of the event in Final Cut Pro X.
 	/// - Returns: An XMLElement object of the event.
-	public func fcpxEvent(name: String) -> XMLElement {
+	public static func fcpxEvent(name: String) -> XMLElement {
 		let element = XMLElement(name: "event")
 		element.fcpxName = name
 		return element
@@ -33,7 +33,7 @@ extension XMLElement {
 	///   - name: The name of the event in Final Cut Pro X.
 	///   - items: Items to add to the event.
 	/// - Returns: An XMLElement object of the event.
-	public func fcpxEvent(name: String, items: [XMLElement]) -> XMLElement {
+	public static func fcpxEvent(name: String, items: [XMLElement]) -> XMLElement {
 		let element = self.fcpxEvent(name: name)
 		do {
 			try element.addToEvent(items: items)
@@ -57,7 +57,7 @@ extension XMLElement {
 	///   - renderColorSpace: The project render color space as a RenderColorSpace enum value.
 	///   - clips: Clip XMLElement objects to add to the timeline of the project.
 	/// - Returns: The XMLElement object of the project.
-	public func fcpxProject(name: String, formatRef: String, duration: CMTime, tcStart: CMTime, tcFormat: TimecodeFormat, audioLayout: AudioLayout, audioRate: AudioRate, renderColorSpace: RenderColorSpace, clips: [XMLElement]) -> XMLElement {
+	public static func fcpxProject(name: String, formatRef: String, duration: CMTime, tcStart: CMTime, tcFormat: TimecodeFormat, audioLayout: AudioLayout, audioRate: AudioRate, renderColorSpace: RenderColorSpace, clips: [XMLElement]) -> XMLElement {
 		
 		let element = XMLElement(name: "project")
 		element.fcpxName = name
@@ -95,7 +95,7 @@ extension XMLElement {
 	///   - start: The start time of the clip's local timeline as a CMTime value.
 	///   - useAudioSubroles: A boolean value indicating if the clip's audio subroles are accessible.
 	/// - Returns: An XMLElement object of the ref-clip.
-	public func fcpxCompoundClip(name: String, ref: String, offset: CMTime?, duration: CMTime, start: CMTime?, useAudioSubroles: Bool) -> XMLElement {
+	public static func fcpxCompoundClip(name: String, ref: String, offset: CMTime?, duration: CMTime, start: CMTime?, useAudioSubroles: Bool) -> XMLElement {
 		
 		let element = XMLElement(name: "ref-clip")
 		
@@ -113,9 +113,7 @@ extension XMLElement {
 		
 		return element
 	}
-	
-	
-	
+
 	/// Creates a new FCPXML multicam reference XMLElement object.
 	///
 	/// - Parameters:
@@ -127,7 +125,7 @@ extension XMLElement {
 	///   - renderColorSpace: The color space of this multicam as an XMLElement.TimecodeFormat enumeration value.
 	///   - angles: The mc-angle elements to embed in this multicam resource.
 	/// - Returns: An XMLElement object of the multicam <media> resource.
-	public func fcpxMulticamResource(name: String, id: String, formatRef: String, tcStart: CMTime?, tcFormat: XMLElement.TimecodeFormat, renderColorSpace: XMLElement.RenderColorSpace, angles: [XMLElement]) -> XMLElement {
+	public static func fcpxMulticamResource(name: String, id: String, formatRef: String, tcStart: CMTime?, tcFormat: XMLElement.TimecodeFormat, renderColorSpace: XMLElement.RenderColorSpace, angles: [XMLElement]) -> XMLElement {
 		
 		let element = XMLElement(name: "media")
 		
@@ -160,7 +158,7 @@ extension XMLElement {
 	///   - duration: The duration of the clip as a CMTime value.
 	///   - mcSources: An array of mc-source elements to place in this element.
 	/// - Returns: An XMLElement object of the multicam <mc-clip> resource.
-	public func fcpxMulticamClip(name: String, refID: String, offset: CMTime?, start: CMTime?, duration: CMTime, mcSources: [XMLElement]) -> XMLElement {
+	public static func fcpxMulticamClip(name: String, refID: String, offset: CMTime?, start: CMTime?, duration: CMTime, mcSources: [XMLElement]) -> XMLElement {
 		
 		let element = XMLElement(name: "mc-clip")
 		
@@ -187,7 +185,7 @@ extension XMLElement {
 	///   - formatRef: The reference ID of the format that this resource uses.
 	///   - clips: An array of XMLElement objects of the clips to be placed inside the secondary storyline.
 	/// - Returns: An XMLElement object of the secondary storyline <spine> element.
-	public func fcpxSecondaryStoryline(lane: Int, offset: CMTime, formatRef: String?, clips: [XMLElement]) -> XMLElement {
+	public static func fcpxSecondaryStoryline(lane: Int, offset: CMTime, formatRef: String?, clips: [XMLElement]) -> XMLElement {
 		
 		let element = XMLElement(name: "spine")
 		
@@ -210,7 +208,7 @@ extension XMLElement {
 	///   - duration: The duration of the clip as a CMTime value.
 	///   - start: The start time of the clip's local timeline as a CMTime value.
 	/// - Returns: An XMLElement object of the gap.
-	public func fcpxGap(offset: CMTime?, duration: CMTime, start: CMTime?) -> XMLElement {
+	public static func fcpxGap(offset: CMTime?, duration: CMTime, start: CMTime?) -> XMLElement {
 		
 		let element = XMLElement(name: "gap")
 		
@@ -250,7 +248,7 @@ extension XMLElement {
 	///   - xPosition: The X position of the text on the screen.
 	///   - yPosition: The Y position of the text on the screen.
 	/// - Returns: An XMLElement object of the title, which will contain the text style definition, if specified.
-	public func fcpxTitle(titleName: String, lane: Int?, offset: CMTime, ref: String, duration: CMTime, start: CMTime, role: String?, titleText: String, textStyleID: Int, newTextStyle: Bool, font: String = "Helvetica", fontSize: CGFloat = 62, fontFace: String = "Regular", fontColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), strokeColor: NSColor? = nil, strokeWidth: Float = 2.0, shadowColor: NSColor? = nil, shadowDistance: Float = 5.0, shadowAngle: Float = 315.0, shadowBlurRadius: Float = 1.0, alignment: TextAlignment = TextAlignment.Center, xPosition: Float = 0, yPosition: Float = 0) -> XMLElement {
+	public static func fcpxTitle(titleName: String, lane: Int?, offset: CMTime, ref: String, duration: CMTime, start: CMTime, role: String?, titleText: String, textStyleID: Int, newTextStyle: Bool, font: String = "Helvetica", fontSize: CGFloat = 62, fontFace: String = "Regular", fontColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), strokeColor: NSColor? = nil, strokeWidth: Float = 2.0, shadowColor: NSColor? = nil, shadowDistance: Float = 5.0, shadowAngle: Float = 315.0, shadowBlurRadius: Float = 1.0, alignment: TextAlignment = TextAlignment.Center, xPosition: Float = 0, yPosition: Float = 0) -> XMLElement {
 		
 		let element = XMLElement(name: "title")
 		
@@ -343,7 +341,7 @@ extension XMLElement {
 	///   - fontColor: The color of the font as an NSColor value.
 	///   - bgColor: The background color behind the text as an NSColor value. Includes alpha value for semi-transparent and transparent backgrounds for CEA-608 captions.
 	/// - Returns: An XMLElement object of the caption, which will contain the text style definition, if newTextStyle is true.
-	public func fcpxCaption(captionName: String, lane: Int?, offset: CMTime, duration: CMTime, start: CMTime, roleName: String, captionFormat: CaptionFormat, language: CaptionLanguage, captionText: String, CEA_displayStyle: CEA608CaptionDisplayStyle?, CEA_rollUpHeight: Int?, CEA_xPosition: Int?, CEA_yPosition: Int?, CEA_alignment: CEA608CaptionAlignment?, ITT_placement: ITTCaptionPlacement?, textStyleID: Int, newTextStyle: Bool, bold: Bool, italic: Bool, underline: Bool, fontColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), bgColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)) -> XMLElement {
+	public static func fcpxCaption(captionName: String, lane: Int?, offset: CMTime, duration: CMTime, start: CMTime, roleName: String, captionFormat: CaptionFormat, language: CaptionLanguage, captionText: String, CEA_displayStyle: CEA608CaptionDisplayStyle?, CEA_rollUpHeight: Int?, CEA_xPosition: Int?, CEA_yPosition: Int?, CEA_alignment: CEA608CaptionAlignment?, ITT_placement: ITTCaptionPlacement?, textStyleID: Int, newTextStyle: Bool, bold: Bool, italic: Bool, underline: Bool, fontColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), bgColor: NSColor = NSColor(calibratedRed: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)) -> XMLElement {
 		
 		let element = XMLElement(name: "caption")
 		
