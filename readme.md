@@ -2,6 +2,9 @@
 
 Pipeline is a Swift framework for working with FCPXML files easily.
 
+## About this Fork
+This is forked from [reuelk.github.io/pipeline](https://reuelk.github.io/pipeline), initially just to make the project compile.
+
 ## About
 Pipeline extends the XMLDocument and XMLElement classes in the Foundation framework. It adds properties and methods that simplify the creation and management of FCPXML document structure.
 
@@ -64,7 +67,7 @@ Subsequent examples use the `fcpxmlDoc` object declared here.
 	
 ### Create and Add a New Event
 
-	let newEvent = XMLElement().fcpxEvent(name: "My New Event")  // Create a new empty event
+	let newEvent = XMLElement.fcpxEvent(name: "My New Event")  // Create a new empty event
 	fcpxmlDoc.add(event: newEvent)  // Add the new event to the FCPXML document
 	dump(fcpxmlDoc.fcpxEventNames) // Neatly display all of the event names
 	
