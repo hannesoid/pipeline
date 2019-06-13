@@ -678,6 +678,7 @@ extension XMLDocument {
 			try self.validate()
 		} catch {
 			print("The document is invalid. It does not conform to the FCPXML v\(version) Document Type Definition.")
+            print("Validation Error: \(error)")
 			self.dtd = nil
 			throw error
 		}
@@ -722,7 +723,7 @@ extension XMLDocument {
 		}
 		
 		do {
-			self.dtd? = try XMLDTD(contentsOf: unwrappedURL, options: [.nodePreserveWhitespace, .nodePrettyPrint, .nodeCompactEmptyElement])
+			self.dtd = try XMLDTD(contentsOf: unwrappedURL, options: [.nodePreserveWhitespace, .nodePrettyPrint, .nodeCompactEmptyElement])
 		} catch {
 			print("Error reading the DTD file.")
 			throw error
