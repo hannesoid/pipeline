@@ -14,30 +14,11 @@
 		0515A10F1E2AF84F00E7DEA9 /* FCPXMLUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A1031E2AF84F00E7DEA9 /* FCPXMLUtility.swift */; };
 		0515A1131E2AF84F00E7DEA9 /* XMLElementExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0515A1071E2AF84F00E7DEA9 /* XMLElementExtension.swift */; };
 		0515A1181E2AF9DF00E7DEA9 /* Pipeline.h in Headers */ = {isa = PBXBuildFile; fileRef = 0515A1051E2AF84F00E7DEA9 /* Pipeline.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0515A7D21E1DBE1F00C05F5F /* JFKmedia.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 0515A7D11E1DBE1F00C05F5F /* JFKmedia.fcpxml */; };
 		0531AB6B1E2B6BD8006F191F /* XMLDocumentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531AB6A1E2B6BD8006F191F /* XMLDocumentExtension.swift */; };
 		0567BA8A1D4334DC0039F518 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C3D79A1CF272B800DEE915 /* Cocoa.framework */; };
 		0567BA8B1D4334DC0039F518 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C3D7981CF272B100DEE915 /* CoreMedia.framework */; };
-		057BE37A1FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 057BE3791FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml */; };
-		0580A0BA20C85788001D094C /* sync clip test.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 0580A0B920C85788001D094C /* sync clip test.fcpxml */; };
-		058556C11E9F520300850F83 /* Batch-MSS-Test-1.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 058556C01E9F520300850F83 /* Batch-MSS-Test-1.fcpxml */; };
-		05AF395F1E1A3B6100319908 /* PipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF395E1E1A3B6100319908 /* PipelineTests.swift */; };
-		05AF39611E1A3B6100319908 /* Pipeline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0567BA921D4334DC0039F518 /* Pipeline.framework */; };
-		05AF39671E1A3B9500319908 /* PCBang_FromGrace_20160202.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 05AF39561E1A3A4800319908 /* PCBang_FromGrace_20160202.fcpxml */; };
-		05EF6D791E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 05EF6D781E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml */; };
-		7623FFDE1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml in Resources */ = {isa = PBXBuildFile; fileRef = 7623FFDD1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml */; };
 		7676560F1E36BADA0003D9E7 /* DTDs in Resources */ = {isa = PBXBuildFile; fileRef = 7676560E1E36BADA0003D9E7 /* DTDs */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		05AF39621E1A3B6100319908 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0579E2511C70027A00D3E96F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0567BA7E1D4334DC0039F518;
-			remoteInfo = Pipeline;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		050440B920C1BF9900262F2A /* FCPXMLParserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FCPXMLParserDelegate.swift; path = Pipeline/Delegates/FCPXMLParserDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -48,20 +29,10 @@
 		0515A1041E2AF84F00E7DEA9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0515A1051E2AF84F00E7DEA9 /* Pipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pipeline.h; sourceTree = "<group>"; };
 		0515A1071E2AF84F00E7DEA9 /* XMLElementExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLElementExtension.swift; sourceTree = "<group>"; };
-		0515A7D11E1DBE1F00C05F5F /* JFKmedia.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = JFKmedia.fcpxml; sourceTree = "<group>"; };
 		0531AB6A1E2B6BD8006F191F /* XMLDocumentExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLDocumentExtension.swift; sourceTree = "<group>"; };
 		0567BA921D4334DC0039F518 /* Pipeline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pipeline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		057BE3791FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MakeSubtitlesTest.fcpxml; sourceTree = "<group>"; };
-		0580A0B920C85788001D094C /* sync clip test.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sync clip test.fcpxml"; sourceTree = "<group>"; };
-		058556C01E9F520300850F83 /* Batch-MSS-Test-1.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Batch-MSS-Test-1.fcpxml"; sourceTree = "<group>"; };
-		05AF39561E1A3A4800319908 /* PCBang_FromGrace_20160202.fcpxml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PCBang_FromGrace_20160202.fcpxml; sourceTree = "<group>"; };
-		05AF395C1E1A3B6100319908 /* PipelineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PipelineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		05AF395E1E1A3B6100319908 /* PipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineTests.swift; sourceTree = "<group>"; };
-		05AF39601E1A3B6100319908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C3D7981CF272B100DEE915 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		05C3D79A1CF272B800DEE915 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		05EF6D781E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = JFK_Moon_Demo_START.fcpxml; sourceTree = "<group>"; };
-		7623FFDD1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "JFK_Moon_Demo_multicam with metadata.fcpxml"; sourceTree = "<group>"; };
 		7676560E1E36BADA0003D9E7 /* DTDs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DTDs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,14 +43,6 @@
 			files = (
 				0567BA8A1D4334DC0039F518 /* Cocoa.framework in Frameworks */,
 				0567BA8B1D4334DC0039F518 /* CoreMedia.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05AF39591E1A3B6100319908 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05AF39611E1A3B6100319908 /* Pipeline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +98,6 @@
 				0515A1161E2AF89200E7DEA9 /* Extensions */,
 				050440B820C1BF3B00262F2A /* Delegates */,
 				0515A1171E2AF89E00E7DEA9 /* Other */,
-				05AF395D1E1A3B6100319908 /* PipelineTests */,
 				0579E25B1C70027A00D3E96F /* Products */,
 				05C3D79A1CF272B800DEE915 /* Cocoa.framework */,
 				05C3D7981CF272B100DEE915 /* CoreMedia.framework */,
@@ -146,25 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				0567BA921D4334DC0039F518 /* Pipeline.framework */,
-				05AF395C1E1A3B6100319908 /* PipelineTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		05AF395D1E1A3B6100319908 /* PipelineTests */ = {
-			isa = PBXGroup;
-			children = (
-				0580A0B920C85788001D094C /* sync clip test.fcpxml */,
-				057BE3791FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml */,
-				058556C01E9F520300850F83 /* Batch-MSS-Test-1.fcpxml */,
-				7623FFDD1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml */,
-				0515A7D11E1DBE1F00C05F5F /* JFKmedia.fcpxml */,
-				05EF6D781E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml */,
-				05AF39561E1A3A4800319908 /* PCBang_FromGrace_20160202.fcpxml */,
-				05AF395E1E1A3B6100319908 /* PipelineTests.swift */,
-				05AF39601E1A3B6100319908 /* Info.plist */,
-			);
-			path = PipelineTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,24 +144,6 @@
 			productReference = 0567BA921D4334DC0039F518 /* Pipeline.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		05AF395B1E1A3B6100319908 /* PipelineTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 05AF39641E1A3B6100319908 /* Build configuration list for PBXNativeTarget "PipelineTests" */;
-			buildPhases = (
-				05AF39581E1A3B6100319908 /* Sources */,
-				05AF39591E1A3B6100319908 /* Frameworks */,
-				05AF395A1E1A3B6100319908 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				05AF39631E1A3B6100319908 /* PBXTargetDependency */,
-			);
-			name = PipelineTests;
-			productName = PipelineTests;
-			productReference = 05AF395C1E1A3B6100319908 /* PipelineTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -229,10 +156,6 @@
 				TargetAttributes = {
 					0567BA7E1D4334DC0039F518 = {
 						LastSwiftMigration = 1000;
-						ProvisioningStyle = Automatic;
-					};
-					05AF395B1E1A3B6100319908 = {
-						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -251,7 +174,6 @@
 			projectRoot = "";
 			targets = (
 				0567BA7E1D4334DC0039F518 /* Pipeline */,
-				05AF395B1E1A3B6100319908 /* PipelineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,20 +184,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7676560F1E36BADA0003D9E7 /* DTDs in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		05AF395A1E1A3B6100319908 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0580A0BA20C85788001D094C /* sync clip test.fcpxml in Resources */,
-				05EF6D791E2E157B00EADB23 /* JFK_Moon_Demo_START.fcpxml in Resources */,
-				0515A7D21E1DBE1F00C05F5F /* JFKmedia.fcpxml in Resources */,
-				7623FFDE1E9DBBBF0026A1EC /* JFK_Moon_Demo_multicam with metadata.fcpxml in Resources */,
-				05AF39671E1A3B9500319908 /* PCBang_FromGrace_20160202.fcpxml in Resources */,
-				058556C11E9F520300850F83 /* Batch-MSS-Test-1.fcpxml in Resources */,
-				057BE37A1FF1C2EA00A4A163 /* MakeSubtitlesTest.fcpxml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,23 +204,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		05AF39581E1A3B6100319908 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05AF395F1E1A3B6100319908 /* PipelineTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		05AF39631E1A3B6100319908 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0567BA7E1D4334DC0039F518 /* Pipeline */;
-			targetProxy = 05AF39621E1A3B6100319908 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0567BA901D4334DC0039F518 /* Debug */ = {
@@ -480,40 +372,6 @@
 			};
 			name = Release;
 		};
-		05AF39651E1A3B6100319908 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = PipelineTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.reuelkim.PipelineTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		05AF39661E1A3B6100319908 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = PipelineTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.reuelkim.PipelineTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -531,15 +389,6 @@
 			buildConfigurations = (
 				0579E26C1C70027A00D3E96F /* Debug */,
 				0579E26D1C70027A00D3E96F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		05AF39641E1A3B6100319908 /* Build configuration list for PBXNativeTarget "PipelineTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				05AF39651E1A3B6100319908 /* Debug */,
-				05AF39661E1A3B6100319908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
